@@ -1,0 +1,27 @@
+{
+  "name": "testtingnln",
+  "version": "1.0.0",
+  "description": "Testing nien luan nganh",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhucYasuo/test-nodejs.git"
+  },
+  "keywords": [
+    "nodejs",
+    "react"
+  ],
+  "author": "phucyasuo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PhucYasuo/test-nodejs/issues"
+  },
+  "homepage": "https://github.com/PhucYasuo/test-nodejs#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
