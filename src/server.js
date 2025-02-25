@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const configViewEngine = require('./config/viewEngine');
 const webRoutes = require('./routes/web');
-const db = require('./config/database');
+const connection = require('./config/database');
 
 const app = express();
 const port = process.env.PORT;
@@ -14,13 +14,13 @@ configViewEngine(app);
 // declare route
 app.use('/',webRoutes);
 
-db.query('SELECT * from giaovien', (err, results) => {
-  if (err) {
-      console.error('Lỗi truy vấn: ', err);
-      return;
-  }
-  console.log(">>>results= ", results);
-});
+// connection.query('SELECT * from giaovien', (err, results) => {
+//   if (err) {
+//       console.error('Lỗi truy vấn: ', err);
+//       return;
+//   }
+//   console.log(">>>results= ", results);
+// });
 
 // make sure shit work
 app.listen(port, hostname, () => {

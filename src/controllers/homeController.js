@@ -1,5 +1,5 @@
 const getHomepage = (req, res) => {
-    res.send('Hello World! Phuc')
+    return res.render('home.ejs');
 };
 
 const getABCpage = (req, res) => {
